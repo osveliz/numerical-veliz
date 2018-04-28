@@ -2,7 +2,7 @@
  * Demonstration of False Position Method
  * as part of online learning video series on
  * YouTube created by Oscar Veliz.
- * https://www.youtube.com/user/oscarsveliz
+ * https://www.youtube.com/OscarVeliz
  * @author Oscar Veliz
  */
 
