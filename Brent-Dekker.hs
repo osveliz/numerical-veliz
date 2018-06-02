@@ -100,7 +100,8 @@ iqires xn xm xm2 i
     where xn1 = iq xn xm xm2
 
 --IQI Initializer using 3 points
-invquadinterp xn xm xm2 = iqires xn xm xm2 0
+invquadinterp :: Rational -> Rational -> Rational -> Result
+invquadinterp xn xm xm2 = iqires (realToFrac xn) (realToFrac xm) (realToFrac xm2) 0
 
 --Brent-Dekker Method Initializer
 --a and b are bracketting interval
@@ -164,5 +165,5 @@ main = do
     printClean "Bisection Method" (bisect a b)
     printClean "Secant Method" (secant b a)
     printClean "Dekker's Method" (dekker a b)
-    printClean "IQI" (invquadinterp (realToFrac b) (realToFrac ((a+b)/2)) (realToFrac a))
+    printClean "IQI" (invquadinterp  b ((a+b)/2) a)
     printClean "Brent's Method" (brentdekkerill a b)
