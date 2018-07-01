@@ -26,7 +26,7 @@ fun fixed x =
 	if abs(f(x)) < eps then x
 	else fixed(g(x));
 
-(* Fixed Point iteration using a list *)
+(* Fixed Point Iteration using a list *)
 fun fixedlist x: real list =
 	if abs(f(List.last(x))) < eps then x
 	else fixedlist(x @ [g(List.last(x))]);
