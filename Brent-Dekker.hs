@@ -10,7 +10,7 @@
 import Data.Ratio
 data Result = Result{root :: Rational , steps :: Integer}deriving (Show)  
 
---function f used for all exampls
+--function f used for all examples
 f x = x^3 - x^2 - x - 1
 
 --epsilon
