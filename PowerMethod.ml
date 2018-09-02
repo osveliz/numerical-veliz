@@ -156,10 +156,10 @@ let invPowerShift a b mu =  let n = ref (Array.length a)in
 
 let a = [|[|0.0;1.0|];
 		  [|1.0;1.0|]|];;			  
-let b = [| 1.0; 1.0|];;
+let b = [|1.0; 1.0|];;
 power a b;;
 (*use if power method doesn't quite converge*)
 printf "lambda %f\n" (rayleigh a b);;
-let b2 = [| 1.0; 1.0|];; 
+let b2 = [|1.0; 1.0|];; 
 (*invPower a b2;;*)
 invPowerShift a b2 (-0.5);;
