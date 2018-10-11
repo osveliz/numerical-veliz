@@ -81,8 +81,8 @@ fun wegstein2(start: Double, f:(x: Double) -> Double, g:(x: Double) -> Double, e
     gn[0] = g(xn[0])
     xn[1] = gn[0]
     gn[1] = g(xn[1])
-    println("0\t${xn[0].toString()}")
-    println("1\t${xn[1].toString()}")
+    println("0\t${xn[0]}")
+    println("1\t${xn[1]}")
     while(abs(f(xn[i])) > eps){
         xn[i+1] = (xn[i-1]*gn[i] - xn[i]*gn[i-1]) / (xn[i-1] + gn[i] - xn[i] - gn[i-1])
         i++
