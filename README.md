@@ -4,13 +4,13 @@ Example code from the YouTube Channel for Oscar Veliz <https://www.youtube.com/O
 Distributed under MIT License.
 See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more documentation.
 
-## Newton Fractals generated in gnuplot using NewtonFractal.plt
+## Newton Fractals generated in gnuplot using [NewtonFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/NewtonFractal.plt)
 
 ![sinz(z)](photos/NewtonFractal/sin3.png)
 ![z^8-15z^4+16](photos/NewtonFractal/z8-1.png)
 ![generalized z^3](photos/NewtonFractal/zcube8.png)
 
-## Newton's Method visualizations created using IntervalConverge.r
+## Newton's Method visualizations created using [IntervalConverge.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/IntervalConverge.r)
 
 ![interval](photos/NewtonInterval/basic_interval.svg)
 ![converging](photos/NewtonInterval/newton_converge.svg)
