@@ -9,8 +9,9 @@ See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more docum
 ![sinz(z)](photos/NewtonFractal/sin3.png)
 ![z^8-15z^4+16](photos/NewtonFractal/z8-1.png)
 ![generalized z^3](photos/NewtonFractal/zcube8.png)
-![generalized z^3](photos/NewtonFractal/z3/RGB.png)
-![generalized z^3](photos/NewtonFractal/z8/combine.png)
+![z^3](photos/NewtonFractal/zcube1.png)
+![rgb](photos/NewtonFractal/z3/RGB.png)
+![z^8 colored](photos/NewtonFractal/z8/combine.png)
 
 ## Newton's Method visualizations created using [IntervalConverge.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/IntervalConverge.r)
 
