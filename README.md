@@ -9,6 +9,8 @@ See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more docum
 ![sinz(z)](photos/NewtonFractal/sin3.png)
 ![z^8-15z^4+16](photos/NewtonFractal/z8-1.png)
 ![generalized z^3](photos/NewtonFractal/zcube8.png)
+![generalized z^3](photos/NewtonFractal/z3/RGB.png)
+![generalized z^3](photos/NewtonFractal/z8/combine.png)
 
 ## Newton's Method visualizations created using [IntervalConverge.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/IntervalConverge.r)
 
@@ -16,3 +18,8 @@ See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more docum
 ![converging](photos/NewtonInterval/newton_converge.svg)
 ![diverging](photos/NewtonInterval/newton_diverge.svg)
 ![newton_gamma](photos/NewtonInterval/wide_newton.svg)
+
+## Complex Plots created using [ComplexRoots.plt](https://github.com/osveliz/numerical-veliz/blob/master/src/rootfinding/ComplexRoots.plt)
+![z3-1](photos/ComplexRoots/z3-1.png)
+![z^8+15z^4-16](photos/ComplexRoots/z8%2B15z4-15.png)
+
