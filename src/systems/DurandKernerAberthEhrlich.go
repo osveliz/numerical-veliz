@@ -120,7 +120,7 @@ func aberthehrlich(a []float64, r []complex128, index int) {
 }
 
 /**
- * Durand-Kerner
+ * Polynomial Solver
  * @param a array of coefficients index is x power [1,2,3] = 1 + 2x + 3x^2
  * @param durand true when using durand-kerner, false for aberth-ehrlich
  * @return array of complex roots
