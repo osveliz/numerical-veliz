@@ -82,7 +82,7 @@ function newtonHorner(a, x)
 		return NaN
 	end
 	r = round(x) # check if rounding will give you a better answer
-	if(abs(horner(a,r)) < abs(horner(x,r)))
+	if(abs(horner(a,r)) < abs(horner(a,x)))
 		x = r
 	end
 	return x
