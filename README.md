@@ -1,4 +1,5 @@
 # numerical-veliz
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 Example code from the YouTube Channel for Oscar Veliz <https://www.youtube.com/OscarVeliz>
 Distributed under MIT License.
@@ -12,6 +13,11 @@ See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more docum
 ![z^3](photos/NewtonFractal/zcube1.png)
 ![rgb](photos/NewtonFractal/z3/RGB.png)
 ![z^8 colored](photos/NewtonFractal/z8/z8.png)
+
+## Laguerre Fractals generated in gnuplot using [LaguerreFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/LaguerreFractal.plt)
+![z^3-1](photos/LaguerreFractal/z3-1halfhalfi.png)
+![z^8+15z^4-16](photos/LaguerreFractal/z8+15z4-16halfhalfi.png)
+
 
 ## Newton's Method visualizations created using [IntervalConverge.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/IntervalConverge.r)
 
