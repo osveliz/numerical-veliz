@@ -15,7 +15,9 @@ See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more docum
 
 ## Halley Fractals generated in gnuplot using [HalleyFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/HalleyFractal.plt)
 ![z^3](photos/HalleyFractal/z3-1.png)
+![z^3](photos/HalleyFractal/z3-1(color).png)
 ![z^8](photos/HalleyFractal/z8+15z4-16.png)
+![z^8](photos/HalleyFractal/z8+15z4-16(color).png)
 ![zoom](photos/HalleyFractal/z8+15z4-16halfhalfizoom.png)
 
 
