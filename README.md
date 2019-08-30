@@ -23,7 +23,11 @@ See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more docum
 
 ## Laguerre Fractals generated in gnuplot using [LaguerreFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/LaguerreFractal.plt)
 ![z^3-1](photos/LaguerreFractal/z3-1halfhalfi.png)
-![z^8+15z^4-16](photos/LaguerreFractal/z8+15z4-16halfhalfi.png)
+![z^3-1color](photos/LaguerreFractal/z3-1(color).png)
+![z^8+15z^4-16](photos/LaguerreFractal/z8+15z4-16.png)
+![z^8+15z^4-16general](photos/LaguerreFractal/z8+15z4-16halfhalfi.png)
+![z^8+15z^4-16zoom](photos/LaguerreFractal/z8+15z4-16(zoom).png)
+![z^8+15z^4-16color](photos/LaguerreFractal/z8+15z4-16(colored).png)
 
 
 ## Newton's Method visualizations created using [PlotNewtonHalley.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/PlotNewtonHalley.r)
