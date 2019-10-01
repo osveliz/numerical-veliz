@@ -20,6 +20,13 @@ See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more docum
 ![z^8](photos/HalleyFractal/z8+15z4-16(color).png)
 ![zoom](photos/HalleyFractal/z8+15z4-16halfhalfizoom.png)
 
+## Householder Fractals generated in gnuplot using [HouseholderFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/HouseholderFractal.plt)
+![z^3](photos/HouseholderFractal/z3-1.png)
+![z^3](photos/HouseholderFractal/z3-1color.png)
+![z^8](photos/HouseholderFractal/z8+15z4-16.png)
+![z^8](photos/HouseholderFractal/z8+15z4-16color.png)
+![zoom](photos/HouseholderFractal/z8+15z4-16zoom0001.png)
+
 
 ## Laguerre Fractals generated in gnuplot using [LaguerreFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/LaguerreFractal.plt)
 ![z^3-1](photos/LaguerreFractal/z3-1halfhalfi.png)
