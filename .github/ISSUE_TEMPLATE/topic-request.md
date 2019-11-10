@@ -1,7 +1,7 @@
 ---
 name: Topic request
 about: Suggest a topic idea
-title: ''
+title: 'Topic Request: [insert topic name here]'
 labels: enhancement
 assignees: osveliz
 
