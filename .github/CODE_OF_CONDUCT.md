@@ -1,7 +1,7 @@
 *Code of Conduct*
 
 **Purpose:**
-This document is meant to facilitate healthy, constructive community behavior. As stated in CONTRIBUTING.md this repo does not accept pull requests although you can contribute through other means. It is the wish of the repo owner for all community interactions to be healthy and respectful.
+This document is meant to facilitate healthy, constructive community behavior. As stated in [CONTRIBUTING.md](https://github.com/osveliz/numerical-veliz/blob/master/.github/CONTRIBUTING.md), this repo does not accept pull requests although you can contribute through other means. It is the wish of the repo owner for all community interactions to be healthy and respectful.
 
 **Where this applies:**
 Everywhere. The community interactions made in the Issues forum, YouTube comments, email, etc.
