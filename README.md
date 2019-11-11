@@ -1,9 +1,12 @@
 # numerical-veliz
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-Example code from the YouTube Channel for Oscar Veliz <https://www.youtube.com/OscarVeliz>
+Example code from the Oscar Veliz YouTube channel <https://www.youtube.com/OscarVeliz>.
 Distributed under MIT License.
-See the wiki at <https://github.com/osveliz/numerical-veliz/wiki> for more documentation.
+Become a [GitHub Sponsor](https://github.com/sponsors/osveliz) to support this project!
+See the [Wiki](https://github.com/osveliz/numerical-veliz/wiki) for more documentation.
+For community guidelines visit the [Code of Conduct](/.github/CODE_OF_CONDUCT.md) and [Contributing](/.github/CONTRIBUTING.md) documents.
+Bug Reports and Topic Requests can be made submitted in the [Issues](https://github.com/osveliz/numerical-veliz/issues) forum.
 
 ## Newton Fractals generated in gnuplot using [NewtonFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/NewtonFractal.plt)
 ![z^3](photos/NewtonFractal/zcube1.png)
