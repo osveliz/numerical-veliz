@@ -16,6 +16,6 @@ Unconstructive behavior like submitting fake bug reports, spamming forums, etc. 
 Depending on the severity, I will try to resolve with all parties involved. Violators that just need time to cool off will be suspended for a while. Clearly toxic or unconstructive community members will be banned.
 
 **How to report a violation:**
-All reports of Code of Conduct violations are taken seriously. You can submit private reports via email to github@oscarveliz.com
+All reports of Code of Conduct violations are taken seriously. You can submit private reports via email to github@osveliz.com
 
 This document may be updated for clarification or as issues arise. 
