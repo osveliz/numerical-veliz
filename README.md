@@ -49,7 +49,7 @@ Bug Reports and Topic Requests can be made submitted in the [Issues](https://git
 ![psi](photos/HalleyPlot/x^2-x-1.svg)
 ![trib](photos/HalleyPlot/x^3-x^2-x-1.svg)
 
-## Taylor Series created using [Taylor.m](https://github.com/osveliz/numerical-veliz/tree/master/src/Series/Taylor.m)
+## Taylor Series created using [Taylor.m](https://github.com/osveliz/numerical-veliz/tree/master/src/series/Taylor.m)
 ![arctan](photos/TaylorSeries/atan.svg)
 ![sec](photos/TaylorSeries/sec.svg)
 ![logtan](photos/TaylorSeries/logtanxo2ppio4.svg)
