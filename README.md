@@ -30,7 +30,6 @@ Bug Reports and Topic Requests can be made submitted in the [Issues](https://git
 ![z^8](photos/HouseholderFractal/z8+15z4-16color.png)
 ![zoom](photos/HouseholderFractal/z8+15z4-16zoom0001.png)
 
-
 ## Laguerre Fractals generated in gnuplot using [LaguerreFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/LaguerreFractal.plt)
 ![z^3-1](photos/LaguerreFractal/z3-1halfhalfi.png)
 ![z^3-1color](photos/LaguerreFractal/z3-1(color).png)
@@ -38,7 +37,6 @@ Bug Reports and Topic Requests can be made submitted in the [Issues](https://git
 ![z^8+15z^4-16general](photos/LaguerreFractal/z8+15z4-16halfhalfi.png)
 ![z^8+15z^4-16zoom](photos/LaguerreFractal/z8+15z4-16(zoom).png)
 ![z^8+15z^4-16color](photos/LaguerreFractal/z8+15z4-16(colored).png)
-
 
 ## Newton's Method visualizations created using [PlotNewtonHalley.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/PlotNewtonHalley.r)
 ![interval](photos/NewtonInterval/basic_interval.svg)
@@ -51,6 +49,10 @@ Bug Reports and Topic Requests can be made submitted in the [Issues](https://git
 ![psi](photos/HalleyPlot/x^2-x-1.svg)
 ![trib](photos/HalleyPlot/x^3-x^2-x-1.svg)
 
+## Taylor Series created using [Taylor.m](https://github.com/osveliz/numerical-veliz/tree/master/src/Series/Taylor.m)
+![arctan](photos/TaylorSeries/atan.svg)
+![sec](photos/TaylorSeries/sec.svg)
+![logtan](photos/TaylorSeries/logtanxo2ppio4.svg)
 
 ## Complex Plots created using [ComplexRoots.plt](https://github.com/osveliz/numerical-veliz/blob/master/src/rootfinding/ComplexRoots.plt)
 ![z3-1](photos/ComplexRoots/z3-1.png)
