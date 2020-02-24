@@ -53,4 +53,4 @@ endfunction
 
 ###Main
 func = "atan(x)"
-plotTaylor(func,0,11);
+plotTaylor(func,0,5);
