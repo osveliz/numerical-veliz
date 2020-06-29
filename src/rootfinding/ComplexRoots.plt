@@ -8,13 +8,13 @@ set terminal pngcairo transparent crop size 4778, 2757 #use 3840, 2160 without c
 #set terminal pngcairo size 3840, 2160
 set output 'ComplexRoots.png'
 max = 1000 #for the cap normalizing
+complex (x, y) = x * {1, 0} + y * {0, 1}
 centerx = 0
 centeri = 0
 r = 2 #size of of plot (distance from center)
 ratio = 1.7777778 #16/9 change to 1 if using square
 #ratio = 1 #16/9 change to 1 if using square
 dots = 4000 #clarity, lower if taking too long
-complex (x, y) = x * {1, 0} + y * {0, 1}
 p(z) = z**3 - 1
 #p(z) = z**8 + 15*z**4 - 16
 cap(z) = z >= max ? 1 : z/max

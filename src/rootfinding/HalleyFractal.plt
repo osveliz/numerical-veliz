@@ -7,13 +7,13 @@
 set terminal pngcairo transparent crop size 4778, 2757 #use 3840, 2160 without crop
 set output 'HalleyFractal.png'
 max = 100 #iterations, lower if taking too long (limit around 240)
+complex (x, y) = x * {1, 0} + y * {0, 1}
 centerx = 0
 centeri = 0
 r = 2 #size of of plot (distance from center)
 ratio = 1.7777778 #16/9 change to 1 if using square
 dots = 1000 #clarity, lower if taking too long
-a = {.5, .5} #generalization, use {1, 0} for normal
-complex (x, y) = x * {1, 0} + y * {0, 1}
+a = complex(0.5, 0.5) #generalization, use 1+0i for normal
 p(z) = z ** 3 - 1
 dp(z) = 3 * z ** 2
 ddp(z) = 6*z

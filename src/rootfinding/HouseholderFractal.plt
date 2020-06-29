@@ -7,12 +7,12 @@
 set terminal pngcairo transparent crop size 4778, 2757 #use 3840, 2160 without crop
 set output 'HouseholderFractal.png'
 max = 100 #iterations, lower if taking too long (limit around 240)
+complex (x, y) = x * {1, 0} + y * {0, 1}
 centerx = 0
 centeri = 0
 r = 2
 ratio = 1.7777778 #16/9 change to 1 if using square
 dots = 1000 #clarity, lower if taking too long
-complex (x, y) = x * {1, 0} + y * {0, 1}
 a = complex(.5,.5) #1/2 + i/2
 p(z) = z**8 + 15*z**4 - 16
 dp(z) = 8*z**7 + 60*z**3
