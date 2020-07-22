@@ -128,11 +128,53 @@ begin
     fibonacci := (c+d)/2;
 end;
 
-(* Coming soon Golden-section Search *)
+(**
+ * Golden-section Search
+ * @param a - left side of interval
+ * @param b - right side of interval
+ * @return midpoint of shrunken [a,b]
+ *)
+function goldensection(a,b: real):real;
+var
+    c,d,fc,fd : real;
+    itr : integer;
+begin
+    c := b + (a-b)/phi;
+    d := a + (b-a)/phi;
+    fc := f(c);
+    fd := f(d);
+    itr := 0;
+    writeln('n,a,c,d,b');
+    writeln(itr,',',a,',',c,',',d,',',b);
+    while (abs(b - a) > eps) and (itr < max) do
+    begin
+        if(fc < fd) then
+        begin
+            b := d;
+            d := c;
+            fd := fc;
+            c := b + (a-b)/phi;
+            fc := f(c)
+        end
+        else
+        begin
+            a := c;
+            c := d;
+            fc := fd;
+            d := a + (b-a)/phi;
+            fd := f(d);
+        end;
+        inc(itr);
+        writeln(itr,',',a,',',c,',',d,',',b);
+    end;
+    writeln('iterations ',itr);
+    goldensection := (c+d)/2;
+end;
 
 (* Main *)
 begin
   writeln('ternary ', ternary(1,2));
   writeln('dichotomous ', dichotomous(1,2));
-  writeln('fibonacci', fibonacci(1,2));
+  writeln('fibonacci ', fibonacci(1,2));
+  writeln('goldensect ', goldensection(1,2));
 end.
