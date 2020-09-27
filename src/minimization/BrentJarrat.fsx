@@ -4,7 +4,7 @@
 *)
 [<Literal>]
 let Max = 100
-let (eps : float) = 10.0**(-7.0)
+let (eps : float) = 10.0**(-6.0)
 let invphi = (1.0 + sqrt(5.0)) / 2.0 - 1.0
 let ratio = (3.0 - sqrt(5.0)) / 2.0
 let lookup = new System.Collections.Generic.Dictionary<_,_>()
