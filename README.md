@@ -2,11 +2,12 @@
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 Example code from the Oscar Veliz YouTube channel <https://www.youtube.com/OscarVeliz>.
-Distributed under MIT License.
-Become a [GitHub Sponsor](https://github.com/sponsors/osveliz) to support this project!
+This repo contains methods for finding roots, minimizing functions, solving systems of equations, and many other numerical algorithms!
 See the [Wiki](https://github.com/osveliz/numerical-veliz/wiki) for more documentation.
+Become a [GitHub Sponsor](https://github.com/sponsors/osveliz) to support this project!
 For community guidelines visit the [Code of Conduct](/.github/CODE_OF_CONDUCT.md) and [Contributing](/.github/CONTRIBUTING.md) documents.
 Bug Reports and Topic Requests can be made submitted in the [Issues](https://github.com/osveliz/numerical-veliz/issues) forum.
+Distributed under MIT License.
 
 ## Newton Fractals generated in gnuplot using [NewtonFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/NewtonFractal.plt)
 ![z^3](photos/NewtonFractal/zcube1.png)
