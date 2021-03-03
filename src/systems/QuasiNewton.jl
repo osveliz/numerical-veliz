@@ -10,7 +10,7 @@ Quasi-Newton Methods for Solving Systems of Nonlinear Equations
 System of nonlinear equations on vector X ([x;y]).
 Overwrite for your own testing, currently set to:
 x^2 - y - 1
-y - x^2 + 1
+x - y^2 + 1
 
 # Examples
 ```julia-repl
