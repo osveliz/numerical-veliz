@@ -21,7 +21,7 @@
 	(* 4 (+ (arctan (/ 1 2)) (arctan (/ 1 3)))) ; 4(arctan(1/2)+arctan(1/3))
 )
 (defun euler2() "Euler's advanced Method of computing pi"
-	(+ (* 20 (arctan(/ 1 7))) (* 8 (arctan(/ 3 79)))) ; 12arctan(1/7) + 8arctan(3/79) 
+	(+ (* 20 (arctan(/ 1 7))) (* 8 (arctan(/ 3 79)))) ; 20arctan(1/7) + 8arctan(3/79)
 )
 (defun machin() "Machin's Method of computing pi"
 	(* 4 (- (* 4 (arctan (/ 1 5))) (arctan (/ 1 239)))) ; 4(4arctan(1/5)-arctan(1/239))
