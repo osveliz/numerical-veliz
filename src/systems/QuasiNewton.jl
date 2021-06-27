@@ -154,8 +154,35 @@ function FiniteDiff(X,h::Float64 = 10^-4, eps::Float64 = 10^-6)
 end
 
 """
-Coming Soon ... Broyden's Method
+    Broyden(X, eps = 10^-6)
+
+"Good" Broyden Method for a system of nonlinear equations in [`F`](@ref).
+Requires starting vector X. Optional eps. Initial J approximated by differencing.
+# Example
+```julia-repl
+julia> Broyden([1.5;2.0])
+2-element Array{Float64,1}:
+ 1.6180340721138766
+ 1.6180340507162783
+```
 """
+function Broyden(X, eps::Float64 = 10^-6)
+    #println(X) #uncomment to see itr
+    FX = F(X)
+    invJ = inv(fdJ(X,FX))
+    while(norm(FX) > eps)
+        Xold = X
+        X = X - invJ*FX
+        #println(X) #uncomment to see itr
+        deltaX = X - Xold
+        FXold = FX
+        FX = F(X)
+        deltaF = FX - FXold
+        trans = transpose(deltaX)
+        invJ = invJ + (deltaX - invJ*deltaF)/(trans*invJ*deltaF)*trans*invJ
+    end
+    X
+end
 
 """
 Main
@@ -164,3 +191,4 @@ Main
 println(Secant(transpose([1.0 1.0;1.0 2.0;1.5 2.0])))
 println(Steffensen([1.5;2.0]))
 println(FiniteDiff([1.5;2.0]))
+println(Broyden([1.5;2.0]))
