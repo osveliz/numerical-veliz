@@ -20,7 +20,6 @@ julia> F([1.0; 2.0])
 """
 F(X) = [X[1]^2 - X[2] - 1; X[1] - X[2]^2 + 1]
 
-
 """
     Secant(X, eps=10^-6)
 
@@ -45,7 +44,7 @@ function Secant(X, eps::Float64 = 10^-6)
         b[1,1] = 1
         p = A \ b
         Xbar = X * p
-        #print(Xbar) #uncomment to see each itr
+        #println(Xbar) #uncomment to see each itr
         X = hcat(X, Xbar)
         X = X[1:end,2:end]
         FX = F(Xbar)
@@ -53,6 +52,39 @@ function Secant(X, eps::Float64 = 10^-6)
         FN = FN[1:end,2:end]
     end
     X[:,end]
+end
+
+"""
+    Robinson(Xn, Xn1, eps=10^-6)
+
+Robinson's Secant Method for the system of nonlinear equations in [`F`](@ref).
+Requires two starting vectors X_{n} and X_{n-1}.
+# Example
+```julia-repl
+julia> Robinson([1.0;1.0],[1.0;2.0])
+2-element Array{Float64,1}:
+ 1.61803397642037
+ 1.61803397642037
+```
+"""
+function Robinson(Xn, Xn1, eps::Float64 = 10^-6)
+    n = size(Xn,1)
+    FX = F(Xn)
+    #println(Xn1) #uncomment to see itr
+    #println(Xn) #uncomment to see itr
+    while norm(FX) > eps
+        H = norm(Xn - Xn1)*I(n) #can be multiplied against any orthoginal using Identity for simplicity
+        T = F(Xn+H[:,1])-FX
+        for i in 2:n
+            T = hcat(T,F(Xn+H[:,i])-FX)
+        end
+        J = T*inv(H)
+        Xn1 = Xn
+        Xn = Xn - inv(J)*FX
+        #println(Xn)  #uncomment to see itr
+        FX = F(Xn)
+    end
+    Xn
 end
 
 """
@@ -189,6 +221,7 @@ Main
 """
 
 println(Secant(transpose([1.0 1.0;1.0 2.0;1.5 2.0])))
+println(Robinson([2.0;2.0],[1.0;1.0]))
 println(Steffensen([1.5;2.0]))
 println(FiniteDiff([1.5;2.0]))
 println(Broyden([1.5;2.0]))
