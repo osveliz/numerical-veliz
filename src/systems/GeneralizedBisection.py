@@ -36,24 +36,16 @@ def L(A, B, X):
     return (B[1]-A[1])*(X[0]-A[0]) - (B[0]-A[0])*(X[1]-A[1])
 
 
-def check2(A, B, C, V):
-    """Harvey-Stenger test if a point V is inside a triangle with points A, B, and C
-    :param A: first point of triangle
-    :param B: second point of triangle
-    :param C: third point of triangle
-    :param V: point to test if in ABC
-    :return: True when V is in ABC, False otherwise
-    """
-    return L(A, B, V)*L(A, B, C) >= 0 and L(B, C, V)*L(B, C, A) >= 0 and L(C, A, V)*L(C, A, B) >= 0
-
-
 def check(M, V):
     """Harvey-Stenger test if a point V is inside a triangle with points in the matrix M
     :param M: Three points A, B, and C in a matrix
     :param V: Point to test
     :return: True when V is in M, False otherwise
     """
-    return check2(M[0, :], M[1, :], M[2, :], V)
+    A = M[0, :]
+    B = M[1, :]
+    C = M[2, :]
+    return L(A, B, V)*L(A, B, C) >= 0 and L(B, C, V)*L(B, C, A) >= 0 and L(C, A, V)*L(C, A, B) >= 0
 
 
 def center(T):
@@ -67,22 +59,12 @@ def center(T):
     return (A+B+C)/3.0
 
 
-def evaluate(A, B, C):
-    """Evaluate A, B, and C and return a matrix with the results
-    :param A: First point
-    :param B: Second point
-    :param C: Third point
-    :return: [F(A),F(B),F(C)] as ndarray
-    """
-    return np.array([npF(A), npF(B), npF(C)])
-
-
 def eval(M):
     """Evaluate a matrix of 3 points
     :param M: Matrix of 3 points A, B, and C
     :return: [F(A),F(B),F(C)] as ndarray
     """
-    return evaluate(M[0, :], M[1, :], M[2, :])
+    return np.array([npF(M[0, :]), npF(M[1, :]), npF(M[2, :])])
 
 
 def rotate(T):
@@ -128,8 +110,8 @@ def setup(d=(-3.5, 3.5), r=(-2, 2), size=(16, 9), res=100000):
                 Lower the res if it is taking too long to plot
     """
     x = np.linspace(d[0], d[1], res)
-    y = x**2 - 1  # x^2 - y - 1
-    fig = plt.figure(figsize=size)
+    y = x**2 - 1  # x² - y - 1
+    plt.figure(figsize=size)
     plt.plot(x, y, 'b', label='x²-y-1')
     plt.plot(y, x, 'g', label='x-y²+1')
     plt.grid(True, linestyle=':')
@@ -142,8 +124,7 @@ def setup(d=(-3.5, 3.5), r=(-2, 2), size=(16, 9), res=100000):
 
 
 def main():
-    """
-    Implementation of 2D Bisection based on simplified
+    """Implementation of 2D Bisection based on simplified
     version of Harvey-Stenger 2D Analogue
     """
     setup()
