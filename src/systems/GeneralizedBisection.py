@@ -26,6 +26,14 @@ def npF(X):
     return np.array(F(X[0], X[1]))
 
 
+def triToPoints(T):
+    """Convert Matrix of 3 points to tuple
+    :param T: Triangle with 3 points
+    :return: (A,B,C)
+    """
+    return (T[0, :], T[1, :], T[2, :])
+
+
 def L(A, B, X):
     """Harvey-Stenger linear form L(A,B,X)
     :param A: [x,y] point as ndarray
@@ -36,15 +44,13 @@ def L(A, B, X):
     return (B[1]-A[1])*(X[0]-A[0]) - (B[0]-A[0])*(X[1]-A[1])
 
 
-def check(M, V):
-    """Harvey-Stenger test if a point V is inside a triangle with points in the matrix M
-    :param M: Three points A, B, and C in a matrix
+def check(T, V):
+    """Harvey-Stenger test if a point V is inside a triangle with points in the matrix T
+    :param T: Three points A, B, and C in a matrix
     :param V: Point to test
-    :return: True when V is in M, False otherwise
+    :return: True when V is in T, False otherwise
     """
-    A = M[0, :]
-    B = M[1, :]
-    C = M[2, :]
+    A, B, C = triToPoints(T)
     return L(A, B, V)*L(A, B, C) >= 0 and L(B, C, V)*L(B, C, A) >= 0 and L(C, A, V)*L(C, A, B) >= 0
 
 
@@ -53,18 +59,17 @@ def center(T):
     :param T: A triangle
     :return: the average (center) of the three points
     """
-    A = T[0, :]
-    B = T[1, :]
-    C = T[2, :]
+    A, B, C = triToPoints(T)
     return (A+B+C)/3.0
 
 
-def eval(M):
+def eval(T):
     """Evaluate a matrix of 3 points
-    :param M: Matrix of 3 points A, B, and C
+    :param T: Matrix of 3 points A, B, and C
     :return: [F(A),F(B),F(C)] as ndarray
     """
-    return np.array([npF(M[0, :]), npF(M[1, :]), npF(M[2, :])])
+    A, B, C = triToPoints(T)
+    return np.array([npF(A), npF(B), npF(C)])
 
 
 def rotate(T):
@@ -72,9 +77,7 @@ def rotate(T):
     :param T: Matrix representing a triangle with 3 points
     :return: Rotated version of same Triangle
     """
-    A = T[0, :]
-    B = T[1, :]
-    C = T[2, :]
+    A, B, C = triToPoints(T)
     ab = np.linalg.norm(A-B)
     bc = np.linalg.norm(B-C)
     ca = np.linalg.norm(C-A)
@@ -157,9 +160,7 @@ def main():
             break
         T = rotate(T)
         drawTri(T)
-        A = T[0, :]
-        B = T[1, :]
-        C = T[2, :]
+        A, B, C = triToPoints(T)
         E = center(T)
         D = (A+B)/2.0
         longest = np.linalg.norm(B-A)
