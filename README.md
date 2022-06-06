@@ -1,5 +1,6 @@
 # numerical-veliz
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) ![GitHub last commit](https://img.shields.io/github/last-commit/osveliz/numerical-veliz) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/osveliz/numerical-veliz) ![GitHub language count](https://img.shields.io/github/languages/count/osveliz/numerical-veliz) ![GitHub top language](https://img.shields.io/github/languages/top/osveliz/numerical-veliz) ![GitHub followers](https://img.shields.io/github/followers/osveliz?style=social) ![GitHub User's stars](https://img.shields.io/github/stars/osveliz?style=social)
 
 Example code from the Oscar Veliz YouTube channel <https://www.youtube.com/OscarVeliz>.
 This repo contains methods for finding roots, minimizing functions, solving systems of equations, and many other numerical algorithms!
@@ -10,6 +11,7 @@ Bug Reports and Topic Requests can be made submitted in the [Issues](https://git
 Distributed under MIT License.
 
 ## Newton Fractals generated in gnuplot using [NewtonFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/NewtonFractal.plt)
+
 ![z^3](photos/NewtonFractal/zcube1.png)
 ![rgb](photos/NewtonFractal/z3/RGB.png)
 ![generalized z^3](photos/NewtonFractal/zcube8.png)
@@ -18,6 +20,7 @@ Distributed under MIT License.
 ![sinz(z)](photos/NewtonFractal/sin3.png)
 
 ## Halley Fractals generated in gnuplot using [HalleyFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/HalleyFractal.plt)
+
 ![z^3](photos/HalleyFractal/z3-1.png)
 ![z^3](photos/HalleyFractal/z3-1(color).png)
 ![z^8](photos/HalleyFractal/z8+15z4-16.png)
@@ -25,6 +28,7 @@ Distributed under MIT License.
 ![zoom](photos/HalleyFractal/z8+15z4-16halfhalfizoom.png)
 
 ## Householder Fractals generated in gnuplot using [HouseholderFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/HouseholderFractal.plt)
+
 ![z^3](photos/HouseholderFractal/z3-1.png)
 ![z^3](photos/HouseholderFractal/z3-1color.png)
 ![z^8](photos/HouseholderFractal/z8+15z4-16.png)
@@ -32,6 +36,7 @@ Distributed under MIT License.
 ![zoom](photos/HouseholderFractal/z8+15z4-16zoom0001.png)
 
 ## Laguerre Fractals generated in gnuplot using [LaguerreFractal.plt](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/LaguerreFractal.plt)
+
 ![z^3-1](photos/LaguerreFractal/z3-1halfhalfi.png)
 ![z^3-1color](photos/LaguerreFractal/z3-1(color).png)
 ![z^8+15z^4-16](photos/LaguerreFractal/z8+15z4-16.png)
@@ -40,22 +45,25 @@ Distributed under MIT License.
 ![z^8+15z^4-16color](photos/LaguerreFractal/z8+15z4-16(colored).png)
 
 ## Newton's Method visualizations created using [PlotNewtonHalley.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/PlotNewtonHalley.r)
+
 ![interval](photos/NewtonInterval/basic_interval.svg)
 ![converging](photos/NewtonInterval/newton_converge.svg)
 ![diverging](photos/NewtonInterval/newton_diverge.svg)
 ![newton_gamma](photos/NewtonInterval/wide_newton.svg)
 
 ## Halley's Method created using [PlotNewtonHalley.r](https://github.com/osveliz/numerical-veliz/tree/master/src/rootfinding/PlotNewtonHalley.r)
+
 ![arctan](photos/HalleyPlot/arctan.svg)
 ![psi](photos/HalleyPlot/x^2-x-1.svg)
 ![trib](photos/HalleyPlot/x^3-x^2-x-1.svg)
 
 ## Taylor Series created using [Taylor.m](https://github.com/osveliz/numerical-veliz/tree/master/src/series/Taylor.m)
+
 ![arctan](photos/TaylorSeries/atan.svg)
 ![sec](photos/TaylorSeries/sec.svg)
 ![logtan](photos/TaylorSeries/logtanxo2ppio4.svg)
 
 ## Complex Plots created using [ComplexRoots.plt](https://github.com/osveliz/numerical-veliz/blob/master/src/rootfinding/ComplexRoots.plt)
+
 ![z3-1](photos/ComplexRoots/z3-1.png)
 ![z^8+15z^4-16](photos/ComplexRoots/z8%2B15z4-15.png)
-
