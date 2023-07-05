@@ -17,12 +17,11 @@ for s in range(n):
     for i in range(n):
         j = n-i-1  # start from right side
         k = j + 2  # leftmost division is by 2 not 0
-        r = A[j] % k  # remainder
         q = A[j] // k  # quotient
         if j != 0:
             A[j-1] = A[j-1] + q  # carry the quotient
         else:
             e = e + str(q)  # last quotient is digit of e
-        A[j] = r
-print(math.e) # built-in to compare
-print(e[:-6]) # remove extra 6 spots
+        A[j] = A[j] % k  # remainder
+print(math.e)  # built-in to compare
+print(e[:-6])  # remove extra 6 spots
