@@ -14,8 +14,7 @@ e = "2."  # start with leading 2
 for s in range(n):
     for i in range(n):
         A[i] = A[i] * 10
-    for i in range(n):
-        j = n-i-1  # start from right side
+    for j in range(n-1, -1, -1):  # start from right side
         k = j + 2  # leftmost division is by 2 not 0
         q = A[j] // k  # quotient
         if j != 0:
